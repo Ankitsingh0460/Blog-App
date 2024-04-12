@@ -1,0 +1,91 @@
+<!-- {% include 'navbar2.html' %} -->
+<head>
+    
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>
+        News blog
+      
+    </title>
+</head>
+<body>
+    <!--Main Start-->
+    <div class="main">
+        <!--Navbar Start-->
+    <nav class="navbar  navbar-expand-lg navbar-dark bg-transparent" style="font-family: 'Luckiest Guy', cursive;">
+        <a class="navbar-brand" href="#" style="padding-left: 150px; font-size: 40px; ">News Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav" style="margin-left: 10%; font-size: 20px;">
+            <a class="nav-item nav-link active" href="{% url 'home2' %}" id="navicon">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="{% url 'myblogs2' %}" id="navicon">My blogs</a>
+            <a class="nav-item nav-link" href="{% url 'aboutus2' %}" id="navicon">About us </a>
+            <a class="nav-item nav-link" href="{% url 'features2' %}" id="navicon">features</a>
+            <a class="nav-item nav-link" href="{% url 'home' %}" id="navicon">Logout</a>
+          </div>
+        </div>
+      </nav>
+    <!--Navbar End-->
+
+<div class="col-md-4 float-right ">
+  <div class="card my-4">
+          <h5 class="card-header">Check more pages click here</h5>
+      <div class="card-body">
+          <p class="card-text"> thanks for using</p>
+          <a href="https://news.google.com/topstories?hl=en-IN&gl=IN&ceid=IN:en"
+             class="btn btn-danger">Know more!</a>
+      </div>
+</div>
+</div>
+<div class="about-section">
+  <h1>About Us</h1>
+  <p>Some text about who we are and what we do.</p>
+ 
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team1.jpg" alt="Ankit Kumar Singh" style="width:100%">
+      <div class="container">
+        <h2>Ankit Kumar Singh</h2>
+        <p class="title">Team Leader</p>
+        <p>Working on Frontend</p>
+      <b>Contect Email</b>
+        <p>singhankit0460@gmail.com</p>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team2.jpg" alt="Vishwas" style="width:100%">
+      <div class="container">
+        <h2>Vishwas Saini</h2>
+        <p class="title">Co-Leader</p>
+        <p>Working on Backend</p>
+       <b>Contect Email</b>
+        <p>sainivishu770@gmail.com</p>
+       
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="/w3images/team3.jpg" alt="Deepanshu" style="width:100%">
+      <div class="container">
+        <h2>Deepanshu</h2>
+        <p class="title">Co-Leader</p>
+        <p>Working on Backend</p>
+        <b>Contect Email</b>
+        <p>deepanshu@gmail.com</p>
+        
+      </div>
+    </div>
+  </div>
+</div>

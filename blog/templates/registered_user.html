@@ -1,0 +1,21 @@
+{% include 'navbar2.html' %}
+    
+<h1>Blog home page</h1>
+
+
+
+<form action="" method = "POST">
+    {%csrf_token%}
+    <label for=""></label>
+    <input type="text" id = 'title' name = 'title' placeholder="Enter Title" required>
+    <br>
+    <br>
+    <label for=""></label>
+    <input type="text" id = 'description' name = 'description' placeholder="Enter description" required>
+    <br>
+    <br>
+
+
+    <button type='submit'>Add</button>
+</form>
+        

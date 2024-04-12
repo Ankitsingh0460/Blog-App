@@ -1,0 +1,218 @@
+
+<!-- {% include 'navbar.html' %} -->
+<head>
+    
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"></script>
+    <title>
+
+        News blog
+    </title>
+</head>
+<body>
+    <!--Main Start-->
+    <div class="main">
+        <!--Navbar Start-->
+    <nav class="navbar  navbar-expand-lg navbar-dark bg-transparent" style="font-family: 'Luckiest Guy', cursive;">
+        <a class="navbar-brand" href="#" style="padding-left: 150px; font-size: 40px; ">News Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav" style="margin-left: 10%; font-size: 20px;">
+            <a class="nav-item nav-link active" href="{% url 'home' %}" id="navicon">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="{% url 'myblogs' %}" id="navicon">My blogs</a>
+            <a class="nav-item nav-link" href="{% url 'aboutus' %}" id="navicon">About us </a>
+            <a class="nav-item nav-link" href="{% url 'features' %}" id="navicon">features</a>
+            <a class="nav-item nav-link" href="{% url 'login' %}" id="navicon">Login</a>
+          </div>
+        </div>
+      </nav>
+    <!--Navbar End-->
+    <b>In this app category, the app cover the happenings around the regional, national or international arena. This category of news app is quite popular among users as it allows them to be aware of the world’s news whenever they want. However, it is integral to present news content that the interesting and grabs attention instantly. Apart from the important news concerning politics, crime, business, sports and entertainment, and weather, users can also be informed regarding the upcoming events & exhibitions across various cities. The app can be accessed free of cost or paid, as decided by the app owners.</b>
+    <div class="vh-100 d-flex justify-content-center align-items-center ">
+      <div class="col-md-5 p-5 shadow-sm border rounded-5 border-primary bg-white">
+          <h2 class="text-center mb-4 text-primary">Add Blog</h2>
+          <form action="" method = 'POST'>
+              {% csrf_token %}
+              <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Title</label>
+                  <input type="text" class="form-control border border-primary" id="title" aria-describedby="emailHelp" name = 'title' placeholder="Enter Title" required>
+              </div>
+              <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Description</label>
+                  <input type="text" class="form-control border border-primary" id="description" name = 'description' placeholder="Enter description" required>
+              </div>
+              
+              <div class="d-grid">
+                  <button class="btn btn-primary" type="submit">Add</button>
+              </div>
+          </form>
+          
+      </div>
+    </div>
+    </body>
+    
+    </html>
+     <!--doctype html-->
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+  <title>Testimonial HTML</title>
+  <!--Stylesheet--------------------------->
+  <link rel="stylesheet" href="css/style.css"/>
+  <!--Fav-icon------------------------------>
+  <link rel="shortcut icon" href="images/fav-icon.png"/>
+  <!--poppins-font-family------------------->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!--using-Font-Awesome-------------------->
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+      <!--Testimonials------------------->
+      <section id="testimonials">
+          <!--heading--->
+          <div class="testimonial-heading">
+              <span>Comments</span>
+              <h1>Clients Says</h1>
+          </div>
+          <!--testimonials-box-container------>
+          <div class="testimonial-box-container">
+              <!--BOX-1-------------->
+              <div class="testimonial-box">
+                  <!--top------------------------->
+                  <div class="box-top">
+                      <!--profile----->
+                      <div class="profile">
+                          <!--img---->
+                          <div class="profile-img">
+                              <img src="images/c-1.jpg" />
+                          </div>
+                          <!--name-and-username-->
+                          <div class="name-user">
+                              <strong>Touseeq Ijaz</strong>
+                              <span>@touseeqijazweb</span>
+                          </div>
+                      </div>
+                      <!--reviews------>
+                      <div class="reviews">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i><!--Empty star-->
+                      </div>
+                  </div>
+                  <!--Comments---------------------------------------->
+                  <div class="client-comment">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                  </div>
+              </div>
+              <!--BOX-2-------------->
+              <div class="testimonial-box">
+                  <!--top------------------------->
+                  <div class="box-top">
+                      <!--profile----->
+                      <div class="profile">
+                          <!--img---->
+                          <div class="profile-img">
+                              <img src="images/c-2.jpg" />
+                          </div>
+                          <!--name-and-username-->
+                          <div class="name-user">
+                              <strong>J.K Rowling</strong>
+                              <span>@jkrowling</span>
+                          </div>
+                      </div>
+                      <!--reviews------>
+                      <div class="reviews">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i><!--Empty star-->
+                      </div>
+                  </div>
+                  <!--Comments---------------------------------------->
+                  <div class="client-comment">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                  </div>
+              </div>
+              <!--BOX-3-------------->
+              <div class="testimonial-box">
+                  <!--top------------------------->
+                  <div class="box-top">
+                      <!--profile----->
+                      <div class="profile">
+                          <!--img---->
+                          <div class="profile-img">
+                              <img src="images/c-3.jpg" />
+                          </div>
+                          <!--name-and-username-->
+                          <div class="name-user">
+                              <strong>Harry Potter</strong>
+                              <span>@DanielRedclief</span>
+                          </div>
+                      </div>
+                      <!--reviews------>
+                      <div class="reviews">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i><!--Empty star-->
+                      </div>
+                  </div>
+                  <!--Comments---------------------------------------->
+                  <div class="client-comment">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                  </div>
+              </div>
+              <!--BOX-4-------------->
+              <div class="testimonial-box">
+                  <!--top------------------------->
+                  <div class="box-top">
+                      <!--profile----->
+                      <div class="profile">
+                          <!--img---->
+                          <div class="profile-img">
+                              <img src="images/c-4.jpg" />
+                          </div>
+                          <!--name-and-username-->
+                          <div class="name-user">
+                              <strong>Oliva</strong>
+                              <span>@Olivaadward</span>
+                          </div>
+                      </div>
+                      <!--reviews------>
+                      <div class="reviews">
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="far fa-star"></i><!--Empty star-->
+                      </div>
+                  </div>
+                  <!--Comments---------------------------------------->
+                  <div class="client-comment">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat quis? Provident temporibus architecto asperiores nobis maiores nisi a. Quae doloribus ipsum aliquam tenetur voluptates incidunt blanditiis sed atque cumque.</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </body>
+  </html>
+    
+    
+ 

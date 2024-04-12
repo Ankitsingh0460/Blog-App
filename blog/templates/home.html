@@ -1,0 +1,82 @@
+<head>
+    
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>
+        News blog
+    </title>
+</head>
+<body>
+    <!--Main Start-->
+    <div class="main">
+        <!--Navbar Start-->
+    <nav class="navbar  navbar-expand-lg navbar-dark bg-transparent" style="font-family: 'Luckiest Guy', cursive;">
+        <a class="navbar-brand" href="#" style="padding-left: 150px; font-size: 40px; ">News Blog</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav" style="margin-left: 10%; font-size: 20px;">
+            <a class="nav-item nav-link active" href="{% url 'home' %}" id="navicon">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="{% url 'myblogs' %}" id="navicon">My blogs</a>
+            <a class="nav-item nav-link" href="{% url 'aboutus' %}" id="navicon">About us </a>
+            <a class="nav-item nav-link" href="{% url 'features' %}" id="navicon">features</a>
+            <a class="nav-item nav-link" href="{% url 'login' %}" id="navicon">Login</a>
+          </div>
+        </div>
+      </nav>
+    <!--Navbar End-->
+        <div class="lefttext">
+            <div class="textwrap">
+                <h1>
+                    News Blog
+                </h1>
+                <p>
+                   
+                </p>
+                <form action="" method="post">
+                    {%csrf_token%}
+                    <button>Add new blog</button>
+
+                </form>
+                
+                
+            </div>
+
+            
+            
+
+        </div>
+        <div class="rightimage">
+            <img src="https://img.freepik.com/free-vector/blogging-fun-content-creation-online-streaming-video-blog-young-girl-making-selfie-social-network-sharing-feedback-self-promotion-strategy-vector-isolated-concept-metaphor-illustration_335657-855.jpg?w=2000">
+        </div>
+    </div>
+    <!-- <div class="aboutus">
+        <div class="leftaboutus">
+            <img src="https://static01.nyt.com/images/2019/04/16/sports/16onsoccerweb-2/merlin_153612873_5bb119b9-8972-4087-b4fd-371cab8c5ba2-superJumbo.jpg">
+        </div>
+        <div class="rightaboutus">
+            
+        </div>
+    </div> -->
+    <!--Main End-->
+    <!--About Us Start-->
+    
+
+
+    <!--About Us Start-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
+<footer class="py-3 bg-grey">
+    <p class="m-0 text-dark text-center ">Copyright &copy; The News Blog</p>
+</footer>
+
+<style>
+        .card{
+            box-shadow: 0 16px 48px #E3E7EB;
+        }
+
+</style>
